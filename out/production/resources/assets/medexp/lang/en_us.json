@@ -1,0 +1,13 @@
+{
+  "item.medexp.steel_ingot": "Steel Ingot",
+
+  "item.medexp.steel_axe": "Steel Axe",
+  "item.medexp.steel_hoe": "Steel Hoe",
+  "item.medexp.steel_shovel": "Steel Shovel",
+  "item.medexp.steel_sword": "Steel Sword",
+  "item.medexp.steel_pickaxe": "Steel Pickaxe",
+
+  "block.medexp.steel_block": "Steel Block",
+
+  "itemGroup.mexgeneral": "ME - General"
+}
