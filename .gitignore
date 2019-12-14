@@ -4,3 +4,6 @@ build/tmp/
 run/
 out/
 build/
+gradlew
+gradlew.bat
+MedievalExpansion.iml
