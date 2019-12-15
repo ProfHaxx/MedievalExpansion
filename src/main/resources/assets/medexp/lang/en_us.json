@@ -7,7 +7,16 @@
   "item.medexp.steel_sword": "Steel Sword",
   "item.medexp.steel_pickaxe": "Steel Pickaxe",
 
+  "item.medexp.steel_helmet": "Steel Helmet",
+  "item.medexp.steel_chestplate": "Steel Chestplate",
+  "item.medexp.steel_leggings": "Steel Leggings",
+  "item.medexp.steel_boots": "Steel Boots",
+
   "block.medexp.steel_block": "Steel Block",
+
+  "item.medexp.goat_entity_egg": "Spawn Goat",
+
+  "entity.medexp.goat_entity": "Goat",
 
   "itemGroup.mexgeneral": "ME - General"
 }

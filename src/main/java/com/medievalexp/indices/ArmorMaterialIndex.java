@@ -19,8 +19,14 @@ public enum ArmorMaterialIndex implements IArmorMaterial {
     private Item repairItem;
     private float toughness;
 
-    private ArmorMaterialIndex(String name, int durability, int[] damageReductionAmount, int enchantability, Item repairItem, String equipSound, float toughness) {
+    ArmorMaterialIndex(String name, int durability, int[] damageReductionAmount, int enchantability, Item repairItem, String equipSound, float toughness) {
         this.name = name;
+        this.durability = durability;
+        this.damageReductionAmount = damageReductionAmount;
+        this.enchantability = enchantability;
+        this.repairItem = repairItem;
+        this.equipSound = equipSound;
+        this.toughness = toughness;
     }
 
     @Override
