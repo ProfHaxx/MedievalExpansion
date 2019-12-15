@@ -3,6 +3,17 @@ package com.medievalexp.indices;
 import net.minecraft.item.Item;
 
 public class ItemIndex {
+
+    public static Item wooden_battle_axe;
+
+    public static Item stone_battle_axe;
+
+    public static Item gold_battle_axe;
+
+    public static Item iron_battle_axe;
+
+    public static Item diamond_battle_axe;
+
     public static Item steel_ingot;
 
     public static Item steel_block;
@@ -12,6 +23,7 @@ public class ItemIndex {
     public static Item steel_pickaxe;
     public static Item steel_shovel;
     public static Item steel_hoe;
+    public static Item steel_battle_axe;
 
     public static Item steel_helmet;
     public static Item steel_chestplate;
@@ -28,6 +40,7 @@ public class ItemIndex {
     public static Item copper_pickaxe;
     public static Item copper_shovel;
     public static Item copper_hoe;
+    public static Item copper_battle_axe;
 
     public static Item copper_helmet;
     public static Item copper_chestplate;
@@ -44,6 +57,7 @@ public class ItemIndex {
     public static Item tin_pickaxe;
     public static Item tin_shovel;
     public static Item tin_hoe;
+    public static Item tin_battle_axe;
 
     public static Item tin_helmet;
     public static Item tin_chestplate;
@@ -60,6 +74,7 @@ public class ItemIndex {
     public static Item silver_pickaxe;
     public static Item silver_shovel;
     public static Item silver_hoe;
+    public static Item silver_battle_axe;
 
     public static Item silver_helmet;
     public static Item silver_chestplate;
@@ -75,6 +90,7 @@ public class ItemIndex {
     public static Item bronze_pickaxe;
     public static Item bronze_shovel;
     public static Item bronze_hoe;
+    public static Item bronze_battle_axe;
 
     public static Item bronze_helmet;
     public static Item bronze_chestplate;

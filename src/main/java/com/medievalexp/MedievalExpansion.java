@@ -4,6 +4,7 @@ import com.medievalexp.client.renders.RenderRegistry;
 import com.medievalexp.config.Config;
 import com.medievalexp.groups.MedievalExpansionGeneralGroup;
 import com.medievalexp.indices.*;
+import com.medievalexp.item.BattleAxeItem;
 import com.medievalexp.world.OreGeneration;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
@@ -67,13 +68,15 @@ public class MedievalExpansion {
         public static void registerItems(final RegistryEvent.Register<Item> event) {
             logger.info("Item Registry initialized.");
             event.getRegistry().registerAll(
+                    //Steel Set
                     ItemIndex.steel_ingot = new Item(new Item.Properties().group(general)).setRegistryName(location("steel_ingot")),
 
                     ItemIndex.steel_axe = new AxeItem(ToolMaterialIndex.STEEL, 6.0f, -3.0f, new Item.Properties().group(general)).setRegistryName("steel_axe"),
-                    ItemIndex.steel_pickaxe = new PickaxeItem(ToolMaterialIndex.STEEL, 1, -2.8f, new Item.Properties().group(general)).setRegistryName("steel_pickaxe"),
+                    ItemIndex.steel_pickaxe = new PickaxeItem(ToolMaterialIndex.STEEL, 1, -2f, new Item.Properties().group(general)).setRegistryName("steel_pickaxe"),
                     ItemIndex.steel_sword = new SwordItem(ToolMaterialIndex.STEEL, 3, -2.4f, new Item.Properties().group(general)).setRegistryName("steel_sword"),
-                    ItemIndex.steel_hoe = new HoeItem(ToolMaterialIndex.STEEL, -3.0f, new Item.Properties().group(general)).setRegistryName("steel_hoe"),
-                    ItemIndex.steel_shovel = new ShovelItem(ToolMaterialIndex.STEEL, 1.5f, -3.0f, new Item.Properties().group(general)).setRegistryName("steel_shovel"),
+                    ItemIndex.steel_hoe = new HoeItem(ToolMaterialIndex.STEEL, -2f, new Item.Properties().group(general)).setRegistryName("steel_hoe"),
+                    ItemIndex.steel_shovel = new ShovelItem(ToolMaterialIndex.STEEL, 1.5f, -2f, new Item.Properties().group(general)).setRegistryName("steel_shovel"),
+                    ItemIndex.steel_battle_axe = new BattleAxeItem(ToolMaterialIndex.STEEL, 8.0f, -3.0f, new Item.Properties().group(general)).setRegistryName("steel_battle_axe"),
 
                     ItemIndex.steel_helmet = new ArmorItem(ArmorMaterialIndex.STEEL, EquipmentSlotType.HEAD, new Item.Properties().group(general)).setRegistryName("steel_helmet"),
                     ItemIndex.steel_chestplate = new ArmorItem(ArmorMaterialIndex.STEEL, EquipmentSlotType.CHEST, new Item.Properties().group(general)).setRegistryName("steel_chestplate"),
@@ -86,10 +89,11 @@ public class MedievalExpansion {
                     ItemIndex.copper_ingot = new Item(new Item.Properties().group(general)).setRegistryName(location("copper_ingot")),
 
                     ItemIndex.copper_axe = new AxeItem(ToolMaterialIndex.COPPER, 6.0f, -3.0f, new Item.Properties().group(general)).setRegistryName("copper_axe"),
-                    ItemIndex.copper_pickaxe = new PickaxeItem(ToolMaterialIndex.COPPER, 1, -2.8f, new Item.Properties().group(general)).setRegistryName("copper_pickaxe"),
+                    ItemIndex.copper_pickaxe = new PickaxeItem(ToolMaterialIndex.COPPER, 1, -2f, new Item.Properties().group(general)).setRegistryName("copper_pickaxe"),
                     ItemIndex.copper_sword = new SwordItem(ToolMaterialIndex.COPPER, 3, -2.4f, new Item.Properties().group(general)).setRegistryName("copper_sword"),
-                    ItemIndex.copper_hoe = new HoeItem(ToolMaterialIndex.COPPER, -3.0f, new Item.Properties().group(general)).setRegistryName("copper_hoe"),
-                    ItemIndex.copper_shovel = new ShovelItem(ToolMaterialIndex.COPPER, 1.5f, -3.0f, new Item.Properties().group(general)).setRegistryName("copper_shovel"),
+                    ItemIndex.copper_hoe = new HoeItem(ToolMaterialIndex.COPPER, -2f, new Item.Properties().group(general)).setRegistryName("copper_hoe"),
+                    ItemIndex.copper_shovel = new ShovelItem(ToolMaterialIndex.COPPER, 1.5f, -2f, new Item.Properties().group(general)).setRegistryName("copper_shovel"),
+                    ItemIndex.copper_battle_axe = new BattleAxeItem(ToolMaterialIndex.COPPER, 8.0f, -3.0f, new Item.Properties().group(general)).setRegistryName("copper_battle_axe"),
 
                     ItemIndex.copper_helmet = new ArmorItem(ArmorMaterialIndex.COPPER, EquipmentSlotType.HEAD, new Item.Properties().group(general)).setRegistryName("copper_helmet"),
                     ItemIndex.copper_chestplate = new ArmorItem(ArmorMaterialIndex.COPPER, EquipmentSlotType.CHEST, new Item.Properties().group(general)).setRegistryName("copper_chestplate"),
@@ -103,10 +107,11 @@ public class MedievalExpansion {
                     ItemIndex.tin_ingot = new Item(new Item.Properties().group(general)).setRegistryName(location("tin_ingot")),
 
                     ItemIndex.tin_axe = new AxeItem(ToolMaterialIndex.TIN, 6.0f, -3.0f, new Item.Properties().group(general)).setRegistryName("tin_axe"),
-                    ItemIndex.tin_pickaxe = new PickaxeItem(ToolMaterialIndex.TIN, 1, -2.8f, new Item.Properties().group(general)).setRegistryName("tin_pickaxe"),
+                    ItemIndex.tin_pickaxe = new PickaxeItem(ToolMaterialIndex.TIN, 1, -2f, new Item.Properties().group(general)).setRegistryName("tin_pickaxe"),
                     ItemIndex.tin_sword = new SwordItem(ToolMaterialIndex.TIN, 3, -2.4f, new Item.Properties().group(general)).setRegistryName("tin_sword"),
-                    ItemIndex.tin_hoe = new HoeItem(ToolMaterialIndex.TIN, -3.0f, new Item.Properties().group(general)).setRegistryName("tin_hoe"),
-                    ItemIndex.tin_shovel = new ShovelItem(ToolMaterialIndex.TIN, 1.5f, -3.0f, new Item.Properties().group(general)).setRegistryName("tin_shovel"),
+                    ItemIndex.tin_hoe = new HoeItem(ToolMaterialIndex.TIN, -2f, new Item.Properties().group(general)).setRegistryName("tin_hoe"),
+                    ItemIndex.tin_shovel = new ShovelItem(ToolMaterialIndex.TIN, 1.5f, -2f, new Item.Properties().group(general)).setRegistryName("tin_shovel"),
+                    ItemIndex.tin_battle_axe = new BattleAxeItem(ToolMaterialIndex.TIN, 8.0f, -3.0f, new Item.Properties().group(general)).setRegistryName("tin_battle_axe"),
 
                     ItemIndex.tin_helmet = new ArmorItem(ArmorMaterialIndex.TIN, EquipmentSlotType.HEAD, new Item.Properties().group(general)).setRegistryName("tin_helmet"),
                     ItemIndex.tin_chestplate = new ArmorItem(ArmorMaterialIndex.TIN, EquipmentSlotType.CHEST, new Item.Properties().group(general)).setRegistryName("tin_chestplate"),
@@ -120,10 +125,11 @@ public class MedievalExpansion {
                     ItemIndex.silver_ingot = new Item(new Item.Properties().group(general)).setRegistryName(location("silver_ingot")),
 
                     ItemIndex.silver_axe = new AxeItem(ToolMaterialIndex.SILVER, 6.0f, -3.0f, new Item.Properties().group(general)).setRegistryName("silver_axe"),
-                    ItemIndex.silver_pickaxe = new PickaxeItem(ToolMaterialIndex.SILVER, 1, -2.8f, new Item.Properties().group(general)).setRegistryName("silver_pickaxe"),
+                    ItemIndex.silver_pickaxe = new PickaxeItem(ToolMaterialIndex.SILVER, 1, -2f, new Item.Properties().group(general)).setRegistryName("silver_pickaxe"),
                     ItemIndex.silver_sword = new SwordItem(ToolMaterialIndex.SILVER, 3, -2.4f, new Item.Properties().group(general)).setRegistryName("silver_sword"),
-                    ItemIndex.silver_hoe = new HoeItem(ToolMaterialIndex.SILVER, -3.0f, new Item.Properties().group(general)).setRegistryName("silver_hoe"),
-                    ItemIndex.silver_shovel = new ShovelItem(ToolMaterialIndex.SILVER, 1.5f, -3.0f, new Item.Properties().group(general)).setRegistryName("silver_shovel"),
+                    ItemIndex.silver_hoe = new HoeItem(ToolMaterialIndex.SILVER, -2f, new Item.Properties().group(general)).setRegistryName("silver_hoe"),
+                    ItemIndex.silver_shovel = new ShovelItem(ToolMaterialIndex.SILVER, 1.5f, -2f, new Item.Properties().group(general)).setRegistryName("silver_shovel"),
+                    ItemIndex.silver_battle_axe = new BattleAxeItem(ToolMaterialIndex.SILVER, 8.0f, -3.0f, new Item.Properties().group(general)).setRegistryName("silver_battle_axe"),
 
                     ItemIndex.silver_helmet = new ArmorItem(ArmorMaterialIndex.SILVER, EquipmentSlotType.HEAD, new Item.Properties().group(general)).setRegistryName("silver_helmet"),
                     ItemIndex.silver_chestplate = new ArmorItem(ArmorMaterialIndex.SILVER, EquipmentSlotType.CHEST, new Item.Properties().group(general)).setRegistryName("silver_chestplate"),
@@ -137,17 +143,33 @@ public class MedievalExpansion {
                     ItemIndex.bronze_ingot = new Item(new Item.Properties().group(general)).setRegistryName(location("bronze_ingot")),
 
                     ItemIndex.bronze_axe = new AxeItem(ToolMaterialIndex.BRONZE, 6.0f, -3.0f, new Item.Properties().group(general)).setRegistryName("bronze_axe"),
-                    ItemIndex.bronze_pickaxe = new PickaxeItem(ToolMaterialIndex.BRONZE, 1, -2.8f, new Item.Properties().group(general)).setRegistryName("bronze_pickaxe"),
+                    ItemIndex.bronze_pickaxe = new PickaxeItem(ToolMaterialIndex.BRONZE, 1, -2f, new Item.Properties().group(general)).setRegistryName("bronze_pickaxe"),
                     ItemIndex.bronze_sword = new SwordItem(ToolMaterialIndex.BRONZE, 3, -2.4f, new Item.Properties().group(general)).setRegistryName("bronze_sword"),
-                    ItemIndex.bronze_hoe = new HoeItem(ToolMaterialIndex.BRONZE, -3.0f, new Item.Properties().group(general)).setRegistryName("bronze_hoe"),
-                    ItemIndex.bronze_shovel = new ShovelItem(ToolMaterialIndex.BRONZE, 1.5f, -3.0f, new Item.Properties().group(general)).setRegistryName("bronze_shovel"),
+                    ItemIndex.bronze_hoe = new HoeItem(ToolMaterialIndex.BRONZE, -2f, new Item.Properties().group(general)).setRegistryName("bronze_hoe"),
+                    ItemIndex.bronze_shovel = new ShovelItem(ToolMaterialIndex.BRONZE, 1.5f, -2f, new Item.Properties().group(general)).setRegistryName("bronze_shovel"),
+                    ItemIndex.bronze_battle_axe = new BattleAxeItem(ToolMaterialIndex.BRONZE, 8.0f, -3.0f, new Item.Properties().group(general)).setRegistryName("bronze_battle_axe"),
 
                     ItemIndex.bronze_helmet = new ArmorItem(ArmorMaterialIndex.BRONZE, EquipmentSlotType.HEAD, new Item.Properties().group(general)).setRegistryName("bronze_helmet"),
                     ItemIndex.bronze_chestplate = new ArmorItem(ArmorMaterialIndex.BRONZE, EquipmentSlotType.CHEST, new Item.Properties().group(general)).setRegistryName("bronze_chestplate"),
                     ItemIndex.bronze_leggings = new ArmorItem(ArmorMaterialIndex.BRONZE, EquipmentSlotType.LEGS, new Item.Properties().group(general)).setRegistryName("bronze_leggings"),
                     ItemIndex.bronze_boots = new ArmorItem(ArmorMaterialIndex.BRONZE, EquipmentSlotType.FEET, new Item.Properties().group(general)).setRegistryName("bronze_boots"),
 
-                    ItemIndex.bronze_block = new BlockItem(BlockIndex.bronze_block, new Item.Properties().group(general)).setRegistryName(Objects.requireNonNull(BlockIndex.bronze_block.getRegistryName()))
+                    ItemIndex.bronze_block = new BlockItem(BlockIndex.bronze_block, new Item.Properties().group(general)).setRegistryName(Objects.requireNonNull(BlockIndex.bronze_block.getRegistryName())),
+
+                    //Wooden Set
+                    ItemIndex.wooden_battle_axe = new BattleAxeItem(ItemTier.WOOD, 8.0f, -3.0f, new Item.Properties().group(general)).setRegistryName("wooden_battle_axe"),
+
+                    //Stone Set
+                    ItemIndex.stone_battle_axe = new BattleAxeItem(ItemTier.STONE, 8.0f, -3.0f, new Item.Properties().group(general)).setRegistryName("stone_battle_axe"),
+
+                    //Gold Set
+                    ItemIndex.gold_battle_axe = new BattleAxeItem(ItemTier.GOLD, 8.0f, -3.0f, new Item.Properties().group(general)).setRegistryName("gold_battle_axe"),
+
+                    //Iron Set
+                    ItemIndex.iron_battle_axe = new BattleAxeItem(ItemTier.IRON, 8.0f, -3.0f, new Item.Properties().group(general)).setRegistryName("iron_battle_axe"),
+
+                    //Diamond Set
+                    ItemIndex.diamond_battle_axe = new BattleAxeItem(ItemTier.DIAMOND, 8.0f, -3.0f, new Item.Properties().group(general)).setRegistryName("diamond_battle_axe")
             );
 
             EntityIndex.registerEntitySpawnEggs(event);

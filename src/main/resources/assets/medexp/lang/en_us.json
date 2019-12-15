@@ -6,6 +6,7 @@
   "item.medexp.steel_shovel": "Steel Shovel",
   "item.medexp.steel_sword": "Steel Sword",
   "item.medexp.steel_pickaxe": "Steel Pickaxe",
+  "item.medexp.steel_battle_axe": "Steel Battle Axe",
 
   "item.medexp.steel_helmet": "Steel Helmet",
   "item.medexp.steel_chestplate": "Steel Chestplate",
@@ -21,6 +22,7 @@
   "item.medexp.copper_shovel": "Copper Shovel",
   "item.medexp.copper_sword": "Copper Sword",
   "item.medexp.copper_pickaxe": "Copper Pickaxe",
+  "item.medexp.copper_battle_axe": "Copper Battle Axe",
 
   "item.medexp.copper_helmet": "Copper Helmet",
   "item.medexp.copper_chestplate": "Copper Chestplate",
@@ -37,6 +39,7 @@
   "item.medexp.tin_shovel": "Tin Shovel",
   "item.medexp.tin_sword": "Tin Sword",
   "item.medexp.tin_pickaxe": "Tin Pickaxe",
+  "item.medexp.tin_battle_axe": "Tin Battle Axe",
 
   "item.medexp.tin_helmet": "Tin Helmet",
   "item.medexp.tin_chestplate": "Tin Chestplate",
@@ -53,6 +56,7 @@
   "item.medexp.silver_shovel": "Silver Shovel",
   "item.medexp.silver_sword": "Silver Sword",
   "item.medexp.silver_pickaxe": "Silver Pickaxe",
+  "item.medexp.silver_battle_axe": "Silver Battle Axe",
 
   "item.medexp.silver_helmet": "Silver Helmet",
   "item.medexp.silver_chestplate": "Silver Chestplate",
@@ -69,6 +73,7 @@
   "item.medexp.bronze_shovel": "Bronze Shovel",
   "item.medexp.bronze_sword": "Bronze Sword",
   "item.medexp.bronze_pickaxe": "Bronze Pickaxe",
+  "item.medexp.bronze_battle_axe": "Bronze Battle Axe",
 
   "item.medexp.bronze_helmet": "Bronze Helmet",
   "item.medexp.bronze_chestplate": "Bronze Chestplate",
@@ -76,6 +81,16 @@
   "item.medexp.bronze_boots": "Bronze Boots",
 
   "block.medexp.bronze_block": "Bronze Block",
+
+  "item.medexp.wooden_battle_axe": "Wooden Battle Axe",
+
+  "item.medexp.stone_battle_axe": "Stone Battle Axe",
+
+  "item.medexp.gold_battle_axe": "Gold Battle Axe",
+
+  "item.medexp.iron_battle_axe": "Iron Battle Axe",
+
+  "item.medexp.diamond_battle_axe": "Diamond Battle Axe",
 
   "item.medexp.goat_entity_egg": "Spawn Goat",
 
