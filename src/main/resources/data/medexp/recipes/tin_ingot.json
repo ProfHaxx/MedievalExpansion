@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "tag": "medexp:tin_ore"
+  },
+  "result": {"item": "medexp:tin_ingot"},
+  "experience": 2.3,
+  "cookingtime": 400,
+  "count": 1
+}

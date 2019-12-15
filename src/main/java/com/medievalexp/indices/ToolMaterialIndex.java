@@ -8,7 +8,8 @@ import net.minecraft.item.crafting.Ingredient;
 
 public enum ToolMaterialIndex implements IItemTier {
     STEEL(3.0f, 8.0f, 512, 2, 16, ItemIndex.steel_ingot),
-    COPPER(2.0f, 6.0f, 168, 2, 13, ItemIndex.copper_ingot);
+    COPPER(2.0f, 6.0f, 168, 2, 13, ItemIndex.copper_ingot),
+    TIN(2.0f, 6.0f, 168, 2, 13, ItemIndex.tin_ingot);
 
     private float attackDamage, efficiency;
     private int durability, harvestLevel, enchantability;

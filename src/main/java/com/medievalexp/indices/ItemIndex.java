@@ -34,5 +34,21 @@ public class ItemIndex {
     public static Item copper_leggings;
     public static Item copper_boots;
 
+    public static Item tin_ingot;
+
+    public static Item tin_block;
+    public static Item tin_ore;
+
+    public static Item tin_sword;
+    public static Item tin_axe;
+    public static Item tin_pickaxe;
+    public static Item tin_shovel;
+    public static Item tin_hoe;
+
+    public static Item tin_helmet;
+    public static Item tin_chestplate;
+    public static Item tin_leggings;
+    public static Item tin_boots;
+
     static Item goat_entity_egg;
 }

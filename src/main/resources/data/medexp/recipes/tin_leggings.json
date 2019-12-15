@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "I I",
+    "I I"
+  ],
+  "key": {
+    "I": {"item": "medexp:tin_ingot"}
+  },
+  "result": {"item": "medexp:tin_leggings"},
+  "count": 1
+}

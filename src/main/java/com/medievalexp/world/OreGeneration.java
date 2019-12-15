@@ -26,6 +26,20 @@ public class OreGeneration {
                             Placement.COUNT_RANGE,
                             new CountRangeConfig(10, 20, 0, 100)));
             }
+
+            //Tin Ore
+            if(OreGenConfig.tin_overworld.get()) {
+                biome.addFeature(
+                        Decoration.UNDERGROUND_ORES,
+                        Biome.createDecoratedFeature(
+                                Feature.ORE,
+                                new OreFeatureConfig(
+                                        OreFeatureConfig.FillerBlockType.NATURAL_STONE,
+                                        BlockIndex.tin_ore.getDefaultState(),
+                                        OreGenConfig.tin_chance.get()),
+                                Placement.COUNT_RANGE,
+                                new CountRangeConfig(10, 20, 0, 100)));
+            }
         }
     }
 }

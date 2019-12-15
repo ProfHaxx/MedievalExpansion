@@ -30,6 +30,22 @@
   "block.medexp.copper_block": "Copper Block",
   "block.medexp.copper_ore": "Copper Ore",
 
+  "item.medexp.tin_ingot": "Tin Ingot",
+
+  "item.medexp.tin_axe": "Tin Axe",
+  "item.medexp.tin_hoe": "Tin Hoe",
+  "item.medexp.tin_shovel": "Tin Shovel",
+  "item.medexp.tin_sword": "Tin Sword",
+  "item.medexp.tin_pickaxe": "Tin Pickaxe",
+
+  "item.medexp.tin_helmet": "Tin Helmet",
+  "item.medexp.tin_chestplate": "Tin Chestplate",
+  "item.medexp.tin_leggings": "Tin Leggings",
+  "item.medexp.tin_boots": "Tin Boots",
+
+  "block.medexp.tin_block": "Tin Block",
+  "block.medexp.tin_ore": "Tin Ore",
+
   "item.medexp.goat_entity_egg": "Spawn Goat",
 
   "entity.medexp.goat_entity": "Goat",
