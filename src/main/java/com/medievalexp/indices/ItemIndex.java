@@ -16,5 +16,7 @@ public class ItemIndex {
     public static Item steel_leggings;
     public static Item steel_boots;
 
+    static Item goat_entity_egg;
+
     public static Item steel_block;
 }

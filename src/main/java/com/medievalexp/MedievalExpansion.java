@@ -1,13 +1,12 @@
 package com.medievalexp;
 
+import com.medievalexp.client.renders.RenderRegistry;
 import com.medievalexp.groups.MedievalExpansionGeneralGroup;
-import com.medievalexp.indices.ArmorMaterialIndex;
-import com.medievalexp.indices.BlockIndex;
-import com.medievalexp.indices.ItemIndex;
-import com.medievalexp.indices.ToolMaterialIndex;
+import com.medievalexp.indices.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.entity.EntityType;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraft.util.ResourceLocation;
@@ -29,7 +28,7 @@ public class MedievalExpansion {
     public static final String modid = "medexp";
     private static final Logger logger = LogManager.getLogger(modid);
 
-    private static final ItemGroup general = new MedievalExpansionGeneralGroup();
+    public static final ItemGroup general = new MedievalExpansionGeneralGroup();
 
     public MedievalExpansion() {
         instance = this;
@@ -45,6 +44,7 @@ public class MedievalExpansion {
     }
 
     private void clientRegistries(final FMLClientSetupEvent event) {
+        RenderRegistry.registryEntityRenders();
         logger.info("Client Registries initialized.");
     }
 
@@ -70,6 +70,9 @@ public class MedievalExpansion {
 
                     ItemIndex.steel_block = new BlockItem(BlockIndex.steel_block, new Item.Properties().group(general)).setRegistryName(Objects.requireNonNull(BlockIndex.steel_block.getRegistryName()))
             );
+
+            EntityIndex.registerEntitySpawnEggs(event);
+
             logger.info("Items registered!");
         }
 
@@ -82,7 +85,17 @@ public class MedievalExpansion {
             logger.info("Items registered!");
         }
 
-        private static ResourceLocation location(String name) {
+        @SubscribeEvent
+        public static void registerEntities(final RegistryEvent.Register<EntityType<?>> event) {
+            logger.info("Item Registry initialized.");
+            event.getRegistry().registerAll(
+                    EntityIndex.GOAT_ENTITY
+            );
+            EntityIndex.registerEntityWorldSpawns();
+            logger.info("Items registered!");
+        }
+
+        public static ResourceLocation location(String name) {
             return new ResourceLocation(modid, name);
         }
     }

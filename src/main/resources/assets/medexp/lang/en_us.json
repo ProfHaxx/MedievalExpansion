@@ -14,5 +14,9 @@
 
   "block.medexp.steel_block": "Steel Block",
 
+  "item.medexp.goat_entity_egg": "Spawn Goat",
+
+  "entity.medexp.goat_entity": "Goat",
+
   "itemGroup.mexgeneral": "ME - General"
 }
