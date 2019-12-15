@@ -113,7 +113,23 @@ public class MedievalExpansion {
                     ItemIndex.tin_boots = new ArmorItem(ArmorMaterialIndex.TIN, EquipmentSlotType.FEET, new Item.Properties().group(general)).setRegistryName("tin_boots"),
 
                     ItemIndex.tin_block = new BlockItem(BlockIndex.tin_block, new Item.Properties().group(general)).setRegistryName(Objects.requireNonNull(BlockIndex.tin_block.getRegistryName())),
-                    ItemIndex.tin_ore = new BlockItem(BlockIndex.tin_ore, new Item.Properties().group(general)).setRegistryName(Objects.requireNonNull(BlockIndex.tin_ore.getRegistryName()))
+                    ItemIndex.tin_ore = new BlockItem(BlockIndex.tin_ore, new Item.Properties().group(general)).setRegistryName(Objects.requireNonNull(BlockIndex.tin_ore.getRegistryName())),
+
+                    ItemIndex.silver_ingot = new Item(new Item.Properties().group(general)).setRegistryName(location("silver_ingot")),
+
+                    ItemIndex.silver_axe = new AxeItem(ToolMaterialIndex.SILVER, 6.0f, -3.0f, new Item.Properties().group(general)).setRegistryName("silver_axe"),
+                    ItemIndex.silver_pickaxe = new PickaxeItem(ToolMaterialIndex.SILVER, 1, -2.8f, new Item.Properties().group(general)).setRegistryName("silver_pickaxe"),
+                    ItemIndex.silver_sword = new SwordItem(ToolMaterialIndex.SILVER, 3, -2.4f, new Item.Properties().group(general)).setRegistryName("silver_sword"),
+                    ItemIndex.silver_hoe = new HoeItem(ToolMaterialIndex.SILVER, -3.0f, new Item.Properties().group(general)).setRegistryName("silver_hoe"),
+                    ItemIndex.silver_shovel = new ShovelItem(ToolMaterialIndex.SILVER, 1.5f, -3.0f, new Item.Properties().group(general)).setRegistryName("silver_shovel"),
+
+                    ItemIndex.silver_helmet = new ArmorItem(ArmorMaterialIndex.SILVER, EquipmentSlotType.HEAD, new Item.Properties().group(general)).setRegistryName("silver_helmet"),
+                    ItemIndex.silver_chestplate = new ArmorItem(ArmorMaterialIndex.SILVER, EquipmentSlotType.CHEST, new Item.Properties().group(general)).setRegistryName("silver_chestplate"),
+                    ItemIndex.silver_leggings = new ArmorItem(ArmorMaterialIndex.SILVER, EquipmentSlotType.LEGS, new Item.Properties().group(general)).setRegistryName("silver_leggings"),
+                    ItemIndex.silver_boots = new ArmorItem(ArmorMaterialIndex.SILVER, EquipmentSlotType.FEET, new Item.Properties().group(general)).setRegistryName("silver_boots"),
+
+                    ItemIndex.silver_block = new BlockItem(BlockIndex.silver_block, new Item.Properties().group(general)).setRegistryName(Objects.requireNonNull(BlockIndex.silver_block.getRegistryName())),
+                    ItemIndex.silver_ore = new BlockItem(BlockIndex.silver_ore, new Item.Properties().group(general)).setRegistryName(Objects.requireNonNull(BlockIndex.silver_ore.getRegistryName()))
             );
 
             EntityIndex.registerEntitySpawnEggs(event);
@@ -129,7 +145,9 @@ public class MedievalExpansion {
                     BlockIndex.copper_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.METAL)).setRegistryName(location("copper_block")),
                     BlockIndex.copper_ore = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.METAL)).setRegistryName(location("copper_ore")),
                     BlockIndex.tin_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.METAL)).setRegistryName(location("tin_block")),
-                    BlockIndex.tin_ore = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.METAL)).setRegistryName(location("tin_ore"))
+                    BlockIndex.tin_ore = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.METAL)).setRegistryName(location("tin_ore")),
+                    BlockIndex.silver_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.METAL)).setRegistryName(location("silver_block")),
+                    BlockIndex.silver_ore = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.METAL)).setRegistryName(location("silver_ore"))
             );
             logger.info("Blocks registered!");
         }

@@ -46,6 +46,22 @@
   "block.medexp.tin_block": "Tin Block",
   "block.medexp.tin_ore": "Tin Ore",
 
+  "item.medexp.silver_ingot": "Silver Ingot",
+
+  "item.medexp.silver_axe": "Silver Axe",
+  "item.medexp.silver_hoe": "Silver Hoe",
+  "item.medexp.silver_shovel": "Silver Shovel",
+  "item.medexp.silver_sword": "Silver Sword",
+  "item.medexp.silver_pickaxe": "Silver Pickaxe",
+
+  "item.medexp.silver_helmet": "Silver Helmet",
+  "item.medexp.silver_chestplate": "Silver Chestplate",
+  "item.medexp.silver_leggings": "Silver Leggings",
+  "item.medexp.silver_boots": "Silver Boots",
+
+  "block.medexp.silver_block": "Silver Block",
+  "block.medexp.silver_ore": "Silver Ore",
+
   "item.medexp.goat_entity_egg": "Spawn Goat",
 
   "entity.medexp.goat_entity": "Goat",

@@ -50,5 +50,21 @@ public class ItemIndex {
     public static Item tin_leggings;
     public static Item tin_boots;
 
+    public static Item silver_ingot;
+
+    public static Item silver_block;
+    public static Item silver_ore;
+
+    public static Item silver_sword;
+    public static Item silver_axe;
+    public static Item silver_pickaxe;
+    public static Item silver_shovel;
+    public static Item silver_hoe;
+
+    public static Item silver_helmet;
+    public static Item silver_chestplate;
+    public static Item silver_leggings;
+    public static Item silver_boots;
+
     static Item goat_entity_egg;
 }

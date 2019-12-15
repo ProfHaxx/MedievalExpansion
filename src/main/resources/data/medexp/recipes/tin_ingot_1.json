@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "B"
+  ],
+  "key": {
+    "B": {"item": "medexp:tin_block"}
+  },
+  "result": {
+    "item": "medexp:tin_ingot",
+    "count": 9
+  }
+}

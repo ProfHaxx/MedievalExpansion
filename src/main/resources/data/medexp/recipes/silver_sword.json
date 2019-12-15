@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I",
+    "I",
+    "S"
+  ],
+  "key": {
+    "I": {"item": "medexp:silver_ingot"},
+    "S": {"item": "minecraft:stick"}
+  },
+  "result": {"item": "medexp:silver_sword"},
+  "count": 1
+}

@@ -10,4 +10,7 @@ public class BlockIndex {
 
     public static Block tin_block;
     public static Block tin_ore;
+
+    public static Block silver_block;
+    public static Block silver_ore;
 }

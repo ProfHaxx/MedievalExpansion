@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "B"
+  ],
+  "key": {
+    "B": {"item": "medexp:steel_block"}
+  },
+  "result": {
+    "item": "medexp:steel_ingot",
+    "count": 9
+  }
+}
