@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "II",
+    "IS",
+    " S"
+  ],
+  "key": {
+    "I": {"item": "medexp:bronze_ingot"},
+    "S": {"item": "minecraft:stick"}
+  },
+  "result": {"item": "medexp:bronze_axe"},
+  "count": 1
+}

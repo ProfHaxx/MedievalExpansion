@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "I I",
+    "I I"
+  ],
+  "key": {
+    "I": {"item": "medexp:bronze_ingot"}
+  },
+  "result": {"item": "medexp:bronze_leggings"},
+  "count": 1
+}

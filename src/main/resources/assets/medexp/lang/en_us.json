@@ -62,6 +62,21 @@
   "block.medexp.silver_block": "Silver Block",
   "block.medexp.silver_ore": "Silver Ore",
 
+  "item.medexp.bronze_ingot": "Bronze Ingot",
+
+  "item.medexp.bronze_axe": "Bronze Axe",
+  "item.medexp.bronze_hoe": "Bronze Hoe",
+  "item.medexp.bronze_shovel": "Bronze Shovel",
+  "item.medexp.bronze_sword": "Bronze Sword",
+  "item.medexp.bronze_pickaxe": "Bronze Pickaxe",
+
+  "item.medexp.bronze_helmet": "Bronze Helmet",
+  "item.medexp.bronze_chestplate": "Bronze Chestplate",
+  "item.medexp.bronze_leggings": "Bronze Leggings",
+  "item.medexp.bronze_boots": "Bronze Boots",
+
+  "block.medexp.bronze_block": "Bronze Block",
+
   "item.medexp.goat_entity_egg": "Spawn Goat",
 
   "entity.medexp.goat_entity": "Goat",

@@ -82,7 +82,7 @@ public class MedievalExpansion {
 
                     ItemIndex.steel_block = new BlockItem(BlockIndex.steel_block, new Item.Properties().group(general)).setRegistryName(Objects.requireNonNull(BlockIndex.steel_block.getRegistryName())),
 
-
+                    //Copper Set
                     ItemIndex.copper_ingot = new Item(new Item.Properties().group(general)).setRegistryName(location("copper_ingot")),
 
                     ItemIndex.copper_axe = new AxeItem(ToolMaterialIndex.COPPER, 6.0f, -3.0f, new Item.Properties().group(general)).setRegistryName("copper_axe"),
@@ -99,6 +99,7 @@ public class MedievalExpansion {
                     ItemIndex.copper_block = new BlockItem(BlockIndex.copper_block, new Item.Properties().group(general)).setRegistryName(Objects.requireNonNull(BlockIndex.copper_block.getRegistryName())),
                     ItemIndex.copper_ore = new BlockItem(BlockIndex.copper_ore, new Item.Properties().group(general)).setRegistryName(Objects.requireNonNull(BlockIndex.copper_ore.getRegistryName())),
 
+                    //Tin Set
                     ItemIndex.tin_ingot = new Item(new Item.Properties().group(general)).setRegistryName(location("tin_ingot")),
 
                     ItemIndex.tin_axe = new AxeItem(ToolMaterialIndex.TIN, 6.0f, -3.0f, new Item.Properties().group(general)).setRegistryName("tin_axe"),
@@ -115,6 +116,7 @@ public class MedievalExpansion {
                     ItemIndex.tin_block = new BlockItem(BlockIndex.tin_block, new Item.Properties().group(general)).setRegistryName(Objects.requireNonNull(BlockIndex.tin_block.getRegistryName())),
                     ItemIndex.tin_ore = new BlockItem(BlockIndex.tin_ore, new Item.Properties().group(general)).setRegistryName(Objects.requireNonNull(BlockIndex.tin_ore.getRegistryName())),
 
+                    //Silver Set
                     ItemIndex.silver_ingot = new Item(new Item.Properties().group(general)).setRegistryName(location("silver_ingot")),
 
                     ItemIndex.silver_axe = new AxeItem(ToolMaterialIndex.SILVER, 6.0f, -3.0f, new Item.Properties().group(general)).setRegistryName("silver_axe"),
@@ -129,7 +131,23 @@ public class MedievalExpansion {
                     ItemIndex.silver_boots = new ArmorItem(ArmorMaterialIndex.SILVER, EquipmentSlotType.FEET, new Item.Properties().group(general)).setRegistryName("silver_boots"),
 
                     ItemIndex.silver_block = new BlockItem(BlockIndex.silver_block, new Item.Properties().group(general)).setRegistryName(Objects.requireNonNull(BlockIndex.silver_block.getRegistryName())),
-                    ItemIndex.silver_ore = new BlockItem(BlockIndex.silver_ore, new Item.Properties().group(general)).setRegistryName(Objects.requireNonNull(BlockIndex.silver_ore.getRegistryName()))
+                    ItemIndex.silver_ore = new BlockItem(BlockIndex.silver_ore, new Item.Properties().group(general)).setRegistryName(Objects.requireNonNull(BlockIndex.silver_ore.getRegistryName())),
+
+                    //Bronze Set
+                    ItemIndex.bronze_ingot = new Item(new Item.Properties().group(general)).setRegistryName(location("bronze_ingot")),
+
+                    ItemIndex.bronze_axe = new AxeItem(ToolMaterialIndex.BRONZE, 6.0f, -3.0f, new Item.Properties().group(general)).setRegistryName("bronze_axe"),
+                    ItemIndex.bronze_pickaxe = new PickaxeItem(ToolMaterialIndex.BRONZE, 1, -2.8f, new Item.Properties().group(general)).setRegistryName("bronze_pickaxe"),
+                    ItemIndex.bronze_sword = new SwordItem(ToolMaterialIndex.BRONZE, 3, -2.4f, new Item.Properties().group(general)).setRegistryName("bronze_sword"),
+                    ItemIndex.bronze_hoe = new HoeItem(ToolMaterialIndex.BRONZE, -3.0f, new Item.Properties().group(general)).setRegistryName("bronze_hoe"),
+                    ItemIndex.bronze_shovel = new ShovelItem(ToolMaterialIndex.BRONZE, 1.5f, -3.0f, new Item.Properties().group(general)).setRegistryName("bronze_shovel"),
+
+                    ItemIndex.bronze_helmet = new ArmorItem(ArmorMaterialIndex.BRONZE, EquipmentSlotType.HEAD, new Item.Properties().group(general)).setRegistryName("bronze_helmet"),
+                    ItemIndex.bronze_chestplate = new ArmorItem(ArmorMaterialIndex.BRONZE, EquipmentSlotType.CHEST, new Item.Properties().group(general)).setRegistryName("bronze_chestplate"),
+                    ItemIndex.bronze_leggings = new ArmorItem(ArmorMaterialIndex.BRONZE, EquipmentSlotType.LEGS, new Item.Properties().group(general)).setRegistryName("bronze_leggings"),
+                    ItemIndex.bronze_boots = new ArmorItem(ArmorMaterialIndex.BRONZE, EquipmentSlotType.FEET, new Item.Properties().group(general)).setRegistryName("bronze_boots"),
+
+                    ItemIndex.bronze_block = new BlockItem(BlockIndex.bronze_block, new Item.Properties().group(general)).setRegistryName(Objects.requireNonNull(BlockIndex.bronze_block.getRegistryName()))
             );
 
             EntityIndex.registerEntitySpawnEggs(event);
@@ -142,6 +160,7 @@ public class MedievalExpansion {
             logger.info("Block Registry initialized.");
             event.getRegistry().registerAll(
                     BlockIndex.steel_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.METAL)).setRegistryName(location("steel_block")),
+                    BlockIndex.bronze_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.METAL)).setRegistryName(location("bronze_block")),
                     BlockIndex.copper_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.METAL)).setRegistryName(location("copper_block")),
                     BlockIndex.copper_ore = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.METAL)).setRegistryName(location("copper_ore")),
                     BlockIndex.tin_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.METAL)).setRegistryName(location("tin_block")),

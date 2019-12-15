@@ -14,7 +14,8 @@ public enum ArmorMaterialIndex implements IArmorMaterial {
     STEEL("steel", 400, new int[]{3, 5, 7, 3}, 16, ItemIndex.steel_ingot, "item.armor.equip_chain", 0.0f),
     COPPER("copper", 200, new int[]{2, 5, 5, 2}, 13, ItemIndex.copper_ingot, "item.armor.equip_chain", 0.0f),
     TIN("tin", 200, new int[]{2, 5, 5, 2}, 13, ItemIndex.tin_ingot, "item.armor.equip_chain", 0.0f),
-    SILVER("silver", 300, new int[]{3, 5, 6, 3}, 13, ItemIndex.silver_ingot, "item.armor.equip_chain", 0.0f);
+    SILVER("silver", 300, new int[]{3, 5, 6, 3}, 18, ItemIndex.silver_ingot, "item.armor.equip_chain", 0.0f),
+    BRONZE("silver", 350, new int[]{3, 5, 6, 3}, 15, ItemIndex.silver_ingot, "item.armor.equip_chain", 1.0f);
 
     private static final int[] max_damage_array = new int[]{13, 15, 16, 11};
 

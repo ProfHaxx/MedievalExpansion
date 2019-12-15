@@ -10,8 +10,8 @@ public enum ToolMaterialIndex implements IItemTier {
     STEEL(3.0f, 8.0f, 512, 2, 16, ItemIndex.steel_ingot),
     COPPER(2.0f, 6.0f, 168, 2, 13, ItemIndex.copper_ingot),
     TIN(2.0f, 6.0f, 168, 2, 13, ItemIndex.tin_ingot),
-    SILVER(2.5f, 7.0f, 386, 2, 13, ItemIndex.silver_ingot);
-
+    SILVER(2.5f, 7.0f, 386, 2, 18, ItemIndex.silver_ingot),
+    BRONZE(2.5f, 386, 2, 13, 15, ItemIndex.bronze_ingot);
     private float attackDamage, efficiency;
     private int durability, harvestLevel, enchantability;
     private Item repairMaterial;

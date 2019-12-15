@@ -13,4 +13,6 @@ public class BlockIndex {
 
     public static Block silver_block;
     public static Block silver_ore;
+
+    public static Block bronze_block;
 }
