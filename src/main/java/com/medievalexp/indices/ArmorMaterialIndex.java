@@ -8,8 +8,11 @@ import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 
+//Armor Materials: net.minecraft.item.ArmorMaterial;
+//Sound Events: net.minecraft.util.SoundEvents;
 public enum ArmorMaterialIndex implements IArmorMaterial {
-    STEEL("steel", 400, new int[]{8, 10, 9, 7}, 16, ItemIndex.steel_ingot, "item.armor.equip_chain", 2.0f);
+    STEEL("steel", 400, new int[]{3, 5, 7, 3}, 16, ItemIndex.steel_ingot, "item.armor.equip_chain", 0.0f),
+    COPPER("copper", 200, new int[]{2, 5, 5, 2}, 13, ItemIndex.copper_ingot, "item.armor.equip_chain", 0.0f);
 
     private static final int[] max_damage_array = new int[]{13, 15, 16, 11};
 

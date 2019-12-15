@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I I",
+    "I I"
+  ],
+  "key": {
+    "I": {"item": "medexp:copper_ingot"}
+  },
+  "result": {"item": "medexp:copper_boots"},
+  "count": 1
+}

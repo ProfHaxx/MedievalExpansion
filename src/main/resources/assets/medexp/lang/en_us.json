@@ -14,6 +14,22 @@
 
   "block.medexp.steel_block": "Steel Block",
 
+  "item.medexp.copper_ingot": "Copper Ingot",
+
+  "item.medexp.copper_axe": "Copper Axe",
+  "item.medexp.copper_hoe": "Copper Hoe",
+  "item.medexp.copper_shovel": "Copper Shovel",
+  "item.medexp.copper_sword": "Copper Sword",
+  "item.medexp.copper_pickaxe": "Copper Pickaxe",
+
+  "item.medexp.copper_helmet": "Copper Helmet",
+  "item.medexp.copper_chestplate": "Copper Chestplate",
+  "item.medexp.copper_leggings": "Copper Leggings",
+  "item.medexp.copper_boots": "Copper Boots",
+
+  "block.medexp.copper_block": "Copper Block",
+  "block.medexp.copper_ore": "Copper Ore",
+
   "item.medexp.goat_entity_egg": "Spawn Goat",
 
   "entity.medexp.goat_entity": "Goat",
