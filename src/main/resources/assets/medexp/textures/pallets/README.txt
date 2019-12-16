@@ -1,0 +1,1 @@
+Hier speichere ich bloß ab jetzt alle palleten für die textures sag falls das irgendwie stört bzw. kannst es dann einf. löschen.
