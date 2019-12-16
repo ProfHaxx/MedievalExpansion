@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "medexp:item/stone_war_hammer"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " IS",
+    " SI",
+    "S  "
+  ],
+  "key": {
+    "I": {"item": "medexp:tin_ingot"},
+    "S": {"item": "minecraft:stick"}
+  },
+  "result": {"item": "medexp:tin_war_hammer"},
+  "count": 1
+}

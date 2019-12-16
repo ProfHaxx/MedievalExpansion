@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " IS",
+    " SI",
+    "S  "
+  ],
+  "key": {
+    "I": {"tag": "medexp:planks"},
+    "S": {"item": "minecraft:stick"}
+  },
+  "result": {"item": "medexp:wooden_war_hammer"},
+  "count": 1
+}

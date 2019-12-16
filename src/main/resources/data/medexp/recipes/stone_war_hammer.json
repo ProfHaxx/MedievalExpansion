@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " IS",
+    " SI",
+    "S  "
+  ],
+  "key": {
+    "I": {"item": "minecraft:cobblestone"},
+    "S": {"item": "minecraft:stick"}
+  },
+  "result": {"item": "medexp:stone_war_hammer"},
+  "count": 1
+}
