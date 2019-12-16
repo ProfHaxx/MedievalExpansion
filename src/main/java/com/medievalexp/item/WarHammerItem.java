@@ -33,13 +33,13 @@ public class WarHammerItem extends ToolItem {
     );
 
     public WarHammerItem(IItemTier tier, int attackDamageIn, float attackSpeedIn, Item.Properties builder) {
-        super((float)attackDamageIn, attackSpeedIn, tier, EFFECTIVE_ON, builder.addToolType(net.minecraftforge.common.ToolType.PICKAXE, 1));
+        super((float)attackDamageIn, attackSpeedIn, tier, EFFECTIVE_ON, builder.addToolType(net.minecraftforge.common.ToolType.PICKAXE, 0));
     }
 
     public boolean canHarvestBlock(BlockState blockState) {
         Block block = blockState.getBlock();
         if (blockState.getHarvestTool() == net.minecraftforge.common.ToolType.PICKAXE) {
-            return 1 >= blockState.getHarvestLevel();
+            return 0 >= blockState.getHarvestLevel();
         }
         Material material = blockState.getMaterial();
         return material == Material.ROCK;

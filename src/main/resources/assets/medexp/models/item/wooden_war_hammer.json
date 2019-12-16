@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "medexp:item/wooden_battle_axe"
+    "layer0": "medexp:item/wooden_war_hammer"
   }
 }
