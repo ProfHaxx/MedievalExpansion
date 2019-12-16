@@ -8,6 +8,7 @@
   "item.medexp.steel_pickaxe": "Steel Pickaxe",
   "item.medexp.steel_battle_axe": "Steel Battle Axe",
   "item.medexp.steel_war_hammer": "Steel War Hammer",
+  "item.medexp.steel_dagger": "Steel Dagger",
 
   "item.medexp.steel_helmet": "Steel Helmet",
   "item.medexp.steel_chestplate": "Steel Chestplate",
@@ -25,6 +26,7 @@
   "item.medexp.copper_pickaxe": "Copper Pickaxe",
   "item.medexp.copper_battle_axe": "Copper Battle Axe",
   "item.medexp.copper_war_hammer": "Copper War Hammer",
+  "item.medexp.copper_dagger": "Copper Dagger",
 
   "item.medexp.copper_helmet": "Copper Helmet",
   "item.medexp.copper_chestplate": "Copper Chestplate",
@@ -43,6 +45,7 @@
   "item.medexp.tin_pickaxe": "Tin Pickaxe",
   "item.medexp.tin_battle_axe": "Tin Battle Axe",
   "item.medexp.tin_war_hammer": "Tin War Hammer",
+  "item.medexp.tin_dagger": "Tin Dagger",
 
   "item.medexp.tin_helmet": "Tin Helmet",
   "item.medexp.tin_chestplate": "Tin Chestplate",
@@ -61,6 +64,7 @@
   "item.medexp.silver_pickaxe": "Silver Pickaxe",
   "item.medexp.silver_battle_axe": "Silver Battle Axe",
   "item.medexp.silver_war_hammer": "Silver War Hammer",
+  "item.medexp.silver_dagger": "Silver Dagger",
 
   "item.medexp.silver_helmet": "Silver Helmet",
   "item.medexp.silver_chestplate": "Silver Chestplate",
@@ -79,6 +83,7 @@
   "item.medexp.bronze_pickaxe": "Bronze Pickaxe",
   "item.medexp.bronze_battle_axe": "Bronze Battle Axe",
   "item.medexp.bronze_war_hammer": "Bronze War Hammer",
+  "item.medexp.bronze_dagger": "Bronze Dagger",
 
   "item.medexp.bronze_helmet": "Bronze Helmet",
   "item.medexp.bronze_chestplate": "Bronze Chestplate",
@@ -89,18 +94,23 @@
 
   "item.medexp.wooden_battle_axe": "Wooden Battle Axe",
   "item.medexp.wooden_war_hammer": "Wooden War Hammer",
+  "item.medexp.wooden_dagger": "Wooden Dagger",
 
   "item.medexp.stone_battle_axe": "Stone Battle Axe",
   "item.medexp.stone_war_hammer": "Stone War Hammer",
+  "item.medexp.stone_dagger": "Stone Dagger",
 
   "item.medexp.gold_battle_axe": "Gold Battle Axe",
   "item.medexp.gold_war_hammer": "Gold War Hammer",
+  "item.medexp.gold_dagger": "Gold Dagger",
 
   "item.medexp.iron_battle_axe": "Iron Battle Axe",
   "item.medexp.iron_war_hammer": "Iron War Hammer",
+  "item.medexp.iron_dagger": "Iron Dagger",
 
   "item.medexp.diamond_battle_axe": "Diamond Battle Axe",
   "item.medexp.diamond_war_hammer": "Diamond War Hammer",
+  "item.medexp.diamond_dagger": "Diamond Dagger",
 
   "item.medexp.goat_entity_egg": "Spawn Goat",
 

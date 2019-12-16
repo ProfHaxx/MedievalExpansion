@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " I",
+    "S "
+  ],
+  "key": {
+    "I": {"item": "minecraft:diamond"},
+    "S": {"item": "minecraft:stick"}
+  },
+  "result": {"item": "medexp:diamond_dagger"},
+  "count": 1
+}
