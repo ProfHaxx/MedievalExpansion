@@ -117,5 +117,16 @@ public class ItemIndex {
     public static Item bronze_leggings;
     public static Item bronze_boots;
 
+    public static Item magical_dust;
+    public static Item magical_ingot;
+
+    public static Item magical_grass;
+    public static Item magical_leaves;
+    public static Item magical_log;
+    public static Item magical_planks;
+    public static Item magical_stone;
+    public static Item magical_block;
+    public static Item magical_ore;
+
     static Item goat_entity_egg;
 }

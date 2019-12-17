@@ -54,6 +54,9 @@ public class OreGeneration {
                                 Placement.COUNT_RANGE,
                                 new CountRangeConfig(10, 20, 0, 40)));
             }
+
+            //Magical Ore (Just spawns in Magical Forest Biome)
+
         }
     }
 }

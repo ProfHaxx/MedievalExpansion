@@ -168,6 +168,18 @@ public class MedievalExpansion {
 
                     ItemIndex.bronze_block = new BlockItem(BlockIndex.bronze_block, new Item.Properties().group(general)).setRegistryName(Objects.requireNonNull(BlockIndex.bronze_block.getRegistryName())),
 
+                    //Magical Set
+                    ItemIndex.magical_dust = new Item(new Item.Properties().group(general)).setRegistryName(location("magical_dust")),
+                    ItemIndex.magical_ingot = new Item(new Item.Properties().group(general)).setRegistryName(location("magical_ingot")),
+
+                    ItemIndex.magical_block = new BlockItem(BlockIndex.magical_block, new Item.Properties().group(general)).setRegistryName(Objects.requireNonNull(BlockIndex.magical_block.getRegistryName())),
+                    ItemIndex.magical_ore = new BlockItem(BlockIndex.magical_ore, new Item.Properties().group(general)).setRegistryName(Objects.requireNonNull(BlockIndex.magical_ore.getRegistryName())),
+                    ItemIndex.magical_grass = new BlockItem(BlockIndex.magical_grass, new Item.Properties().group(general)).setRegistryName(Objects.requireNonNull(BlockIndex.magical_grass.getRegistryName())),
+                    ItemIndex.magical_stone = new BlockItem(BlockIndex.magical_stone, new Item.Properties().group(general)).setRegistryName(Objects.requireNonNull(BlockIndex.magical_stone.getRegistryName())),
+                    ItemIndex.magical_log = new BlockItem(BlockIndex.magical_log, new Item.Properties().group(general)).setRegistryName(Objects.requireNonNull(BlockIndex.magical_log.getRegistryName())),
+                    ItemIndex.magical_planks = new BlockItem(BlockIndex.magical_planks, new Item.Properties().group(general)).setRegistryName(Objects.requireNonNull(BlockIndex.magical_planks.getRegistryName())),
+                    ItemIndex.magical_leaves = new BlockItem(BlockIndex.magical_leaves, new Item.Properties().group(general)).setRegistryName(Objects.requireNonNull(BlockIndex.magical_leaves.getRegistryName())),
+
                     //Wooden Set
                     ItemIndex.wooden_battle_axe = new BattleAxeItem(ItemTier.WOOD, 8.0f, -3.0f, new Item.Properties().group(general)).setRegistryName("wooden_battle_axe"),
                     ItemIndex.wooden_war_hammer = new WarHammerItem(ItemTier.WOOD, 8, -3.0f, new Item.Properties().group(general)).setRegistryName("wooden_war_hammer"),
@@ -207,13 +219,25 @@ public class MedievalExpansion {
             logger.info("Block Registry initialized.");
             event.getRegistry().registerAll(
                     BlockIndex.steel_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.METAL)).setRegistryName(location("steel_block")),
+
                     BlockIndex.bronze_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.METAL)).setRegistryName(location("bronze_block")),
+
                     BlockIndex.copper_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.METAL)).setRegistryName(location("copper_block")),
-                    BlockIndex.copper_ore = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.METAL)).setRegistryName(location("copper_ore")),
+                    BlockIndex.copper_ore = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.STONE)).setRegistryName(location("copper_ore")),
+
                     BlockIndex.tin_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.METAL)).setRegistryName(location("tin_block")),
-                    BlockIndex.tin_ore = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.METAL)).setRegistryName(location("tin_ore")),
+                    BlockIndex.tin_ore = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.STONE)).setRegistryName(location("tin_ore")),
+
                     BlockIndex.silver_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.METAL)).setRegistryName(location("silver_block")),
-                    BlockIndex.silver_ore = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.METAL)).setRegistryName(location("silver_ore"))
+                    BlockIndex.silver_ore = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.STONE)).setRegistryName(location("silver_ore")),
+
+                    BlockIndex.magical_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.METAL)).setRegistryName(location("magical_block")),
+                    BlockIndex.magical_ore = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.STONE)).setRegistryName(location("magical_ore")),
+                    BlockIndex.magical_grass = new Block(Block.Properties.create(Material.EARTH).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.GROUND)).setRegistryName(location("magical_grass")),
+                    BlockIndex.magical_stone = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.STONE)).setRegistryName(location("magical_stone")),
+                    BlockIndex.magical_log = new Block(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.WOOD)).setRegistryName(location("magical_log")),
+                    BlockIndex.magical_planks = new Block(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.WOOD)).setRegistryName(location("magical_planks")),
+                    BlockIndex.magical_leaves = new Block(Block.Properties.create(Material.LEAVES).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.CROP)).setRegistryName(location("magical_leaves"))
             );
             logger.info("Blocks registered!");
         }

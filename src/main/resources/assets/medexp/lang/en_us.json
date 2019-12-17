@@ -92,6 +92,17 @@
 
   "block.medexp.bronze_block": "Bronze Block",
 
+  "item.medexp.magical_dust": "Magical Dust",
+  "item.medexp.magical_ingot": "Magical Ingot",
+
+  "block.medexp.magical_block": "Magical Block",
+  "block.medexp.magical_ore": "Magical Ore",
+  "block.medexp.magical_grass": "Magical Grass",
+  "block.medexp.magical_stone": "Magical Stone",
+  "block.medexp.magical_log": "Magical Log",
+  "block.medexp.magical_planks": "Magical Planks",
+  "block.medexp.magical_leaves": "Magical Leaves",
+
   "item.medexp.wooden_battle_axe": "Wooden Battle Axe",
   "item.medexp.wooden_war_hammer": "Wooden War Hammer",
   "item.medexp.wooden_dagger": "Wooden Dagger",
