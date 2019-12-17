@@ -6,7 +6,7 @@
     " S "
   ],
   "key": {
-    "I": {"item": "minecraft:diamond_ingot"},
+    "I": {"item": "minecraft:diamond"},
     "S": {"item": "minecraft:stick"}
   },
   "result": {"item": "medexp:diamond_battle_axe"},

@@ -7,14 +7,18 @@ import com.medievalexp.indices.*;
 import com.medievalexp.item.BattleAxeItem;
 import com.medievalexp.item.DaggerItem;
 import com.medievalexp.item.WarHammerItem;
+import com.medievalexp.world.MedievalWorldType;
 import com.medievalexp.world.OreGeneration;
-import net.minecraft.block.Block;
-import net.minecraft.block.SoundType;
+import com.medievalexp.world.biomes.MagicalForestBiome;
+import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.material.MaterialColor;
 import net.minecraft.entity.EntityType;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.world.WorldType;
+import net.minecraft.world.biome.Biome;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -37,6 +41,7 @@ public class MedievalExpansion {
     public static final Logger logger = LogManager.getLogger(modid);
 
     public static final ItemGroup general = new MedievalExpansionGeneralGroup();
+    public static final WorldType medieval_type = new MedievalWorldType();
 
     public MedievalExpansion() {
         instance = this;
@@ -233,11 +238,11 @@ public class MedievalExpansion {
 
                     BlockIndex.magical_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.METAL)).setRegistryName(location("magical_block")),
                     BlockIndex.magical_ore = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.STONE)).setRegistryName(location("magical_ore")),
-                    BlockIndex.magical_grass = new Block(Block.Properties.create(Material.EARTH).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.GROUND)).setRegistryName(location("magical_grass")),
+                    BlockIndex.magical_grass = new GrassBlock(Block.Properties.create(Material.EARTH).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.GROUND)).setRegistryName(location("magical_grass")),
                     BlockIndex.magical_stone = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.STONE)).setRegistryName(location("magical_stone")),
-                    BlockIndex.magical_log = new Block(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.WOOD)).setRegistryName(location("magical_log")),
+                    BlockIndex.magical_log = new LogBlock(MaterialColor.CYAN, Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.WOOD)).setRegistryName(location("magical_log")),
                     BlockIndex.magical_planks = new Block(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.WOOD)).setRegistryName(location("magical_planks")),
-                    BlockIndex.magical_leaves = new Block(Block.Properties.create(Material.LEAVES).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.CROP)).setRegistryName(location("magical_leaves"))
+                    BlockIndex.magical_leaves = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.CROP)).setRegistryName(location("magical_leaves"))
             );
             logger.info("Blocks registered!");
         }
@@ -250,6 +255,18 @@ public class MedievalExpansion {
             );
             EntityIndex.registerEntityWorldSpawns();
             logger.info("Entities registered!");
+        }
+
+        @SubscribeEvent
+        public static void registerBiomes(final RegistryEvent.Register<Biome> event) {
+            logger.info("Biome Registry initialized.");
+            event.getRegistry().registerAll(
+                    BiomeIndex.magical_forest_biome = new MagicalForestBiome()
+            );
+
+            BiomeIndex.registerBiomes();
+
+            logger.info("Biomes registered!");
         }
 
         public static ResourceLocation location(String name) {

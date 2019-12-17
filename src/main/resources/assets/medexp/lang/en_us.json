@@ -127,5 +127,6 @@
 
   "entity.medexp.goat_entity": "Goat",
 
+  "generator.medieval_type": "Medieval",
   "itemGroup.mexgeneral": "ME - General"
 }

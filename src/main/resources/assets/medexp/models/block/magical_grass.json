@@ -4,7 +4,7 @@
     "bottom": "block/dirt",
     "top": "medexp:block/magical_grass_block_top",
     "side": "medexp:block/magical_grass_block_side",
-    "overlay": "block/grass_block_side_overlay"
+    "overlay": "medexp:block/magical_grass_block_side_overlay"
   },
   "elements": [
     {   "from": [ 0, 0, 0 ],
