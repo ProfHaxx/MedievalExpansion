@@ -7,9 +7,7 @@ import com.medievalexp.indices.*;
 import com.medievalexp.item.BattleAxeItem;
 import com.medievalexp.item.DaggerItem;
 import com.medievalexp.item.WarHammerItem;
-import com.medievalexp.world.MedievalWorldType;
 import com.medievalexp.world.OreGeneration;
-import com.medievalexp.world.biomes.MagicalForestBiome;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
@@ -17,7 +15,6 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.world.WorldType;
 import net.minecraft.world.biome.Biome;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
@@ -41,7 +38,6 @@ public class MedievalExpansion {
     public static final Logger logger = LogManager.getLogger(modid);
 
     public static final ItemGroup general = new MedievalExpansionGeneralGroup();
-    public static final WorldType medieval_type = new MedievalWorldType();
 
     public MedievalExpansion() {
         instance = this;
@@ -260,11 +256,6 @@ public class MedievalExpansion {
         @SubscribeEvent
         public static void registerBiomes(final RegistryEvent.Register<Biome> event) {
             logger.info("Biome Registry initialized.");
-            event.getRegistry().registerAll(
-                    BiomeIndex.magical_forest_biome = new MagicalForestBiome()
-            );
-
-            BiomeIndex.registerBiomes();
 
             logger.info("Biomes registered!");
         }
